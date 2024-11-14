@@ -1,0 +1,35 @@
+{
+    "categories": {
+      "design": [
+        {
+          "question": "Что такое UX дизайн?",
+          "answer": "123"
+        },
+        {
+          "question": "Какой цвет является основным в RGB?",
+          "answer": "Нет"
+        }
+      ],
+      "programming": [
+        {
+          "question": "Что такое JavaScript?",
+          "answer": "Да"
+        },
+        {
+          "question": "Является ли Python компилируемым языком?",
+          "answer": "Нет"
+        }
+      ],
+      "personal": [
+        {
+          "question": "Ты любишь путешествовать?",
+          "answer": "Да"
+        },
+        {
+          "question": "Ты предпочитаешь кофе чаю?",
+          "answer": "Нет"
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .container {
+            width: 1400px;
+        }
+
+        .table {
+            cursor: pointer;
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .table th, .table td {
+            border: 1px solid #888;
+            padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+        }
+
+        .table td:hover {
+            background: #fffabe;
+        }
+
+        .table td:hover:before { 
+            background-color: #eee;
+            content: '';  
+            height: 100%;
+            left: -5000px;
+            position: absolute;  
+            top: 0;
+            width: 10000px;   
+            z-index: -2;        
+        }
+
+        /* Новый класс для серой ячейки */
+        .gray {
+            background-color: #C6EFCE;
+            color: #378939; /* Убедитесь, что текст виден на сером фоне */
+        }
+    </style>
+</head>
+<body>
+ <div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th rowspan="2">Наименование</th>
+                <th rowspan="2">Ду</th>
+                <th colspan="4">Корпус стальной</th>
+                <th colspan="4">Корпус нержавеющий</th>
+               
+            </tr>
+            <tr>
+                <th>Фланец</th>
+                <th>Под приварку</th>
+                <th>Фланец</th>
+                <th>Под приварку</th>
+                <th>Фланец</th>
+                <th>Под приварку</th>
+                <th>Фланец</th>
+                <th>Под приварку</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Сепаратор воздуха Ecotermal 37301</td>
+                <td>20</td>
+                <td>28 260</td>
+                <td>25 740</td>
+                <td>26 616</td>
+                <td>24 096</td>
+                <td>76 704</td>
+                <td>68 208</td>
+                <td>75 060</td>
+                <td>66 564</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха Ecotermal 37302</td>
+                <td>25</td>
+                <td>28 860</td>
+                <td>25 896</td>
+                <td>27 216</td>
+                <td>24 252</td>
+                <td>78 996</td>
+                <td>68 772</td>
+                <td>5 328</td>
+                <td>67 128</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха Ecotermal 37303</td>
+                <td>32</td>
+                <td>29 532</td>
+                <td>26 268</td>
+                <td>27 888</td>
+                <td>24 624</td>
+                <td>81 600</td>
+                <td>70 056</td>
+                <td>79 956</td>
+                <td>68 412</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха Ecotermal 37304</td>
+                <td>40</td>
+                <td>35 760</td>
+                <td>32 076</td>
+                <td>32 796</td>
+                <td>29 112</td>
+                <td>97 008</td>
+                <td>83 784</td>
+                <td>94 044</td>
+                <td>80 820</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха Ecotermal 37305</td>
+                <td>50</td>
+                <td>38 100</td>
+                <td>32 832</td>
+                <td>35 136</td>
+                <td>29 868</td>
+                <td>104 724</td>
+                <td>86 064</td>
+                <td>101 760</td>
+                <td>83 100</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха Ecotermal 37306</td>
+                <td>65</td>
+                <td>40 416</td>
+                <td>34 020</td>
+                <td>37 260</td>
+                <td>30 864</td>
+                <td>112 212</td>
+                <td>89 532</td>
+                <td>109 056</td>
+                <td>86 376</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха Ecotermal 37307</td>
+                <td>80</td>
+                <td>55 164</td>
+                <td>48 036</td>
+                <td>47 352</td>
+                <td>40 224</td>
+                <td>148 668</td>
+                <td>123 468</td>
+                <td>140 856</td>
+                <td>115 656</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха Ecotermal 37308</td>
+                <td>100</td>
+                <td>58 248</td>
+                <td>49 260</td>
+                <td>50 436</td>
+                <td>41 448</td>
+                <td>159 240</td>
+                <td>127 500</td>
+                <td>151 428</td>
+                <td>119 688</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха Ecotermal 37309</td>
+                <td>125</td>
+                <td>79 896</td>
+                <td>68 868</td>
+                <td>66 852</td>
+                <td>55 824</td>
+                <td>220 692</td>
+                <td>181 008</td>
+                <td>207 648</td>
+                <td>167 964</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха Ecotermal 37310</td>
+                <td>150</td>
+                <td>105 288</td>
+                <td>93 096</td>
+                <td>83 232</td>
+                <td>71 040</td>
+                <td>293 736</td>
+                <td>249 624</td>
+                <td>271 680</td>
+                <td>227 568</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха Ecotermal 37311</td>
+                <td>200</td>
+                <td>184 944</td>
+                <td>169 212</td>
+                <td>134 544</td>
+                <td>118 812</td>
+                <td>507 816</td>
+                <td>450 552</td>
+                <td>457 416</td>
+                <td>400 152</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха Ecotermal 37312</td>
+                <td>250</td>
+                <td>294 504</td>
+                <td>274 188</td>
+                <td>199 368</td>
+                <td>179 052</td>
+                <td>789 780</td>
+                <td>714 000</td>
+                <td>694 644</td>
+                <td>618 864</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха Ecotermal 37313</td>
+                <td>300</td>
+                <td>455 892</td>
+                <td>430 368</td>
+                <td>292 716</td>
+                <td>267 192</td>
+                <td>1 184 784</td>
+                <td>1 090 008</td>
+                <td>1 021 608</td>
+                <td>926 832</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха Ecotermal 37314</td>
+                <td>350</td>
+                <td>594 888</td>
+                <td>562 884</td>
+                <td>352 332</td>
+                <td>320 328</td>
+                <td>1 514 364</td>
+                <td>1 393 536</td>
+                <td>1 271 808</td>
+                <td>1 150 980</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха Ecotermal 37315</td>
+                <td>400</td>
+                <td>748 596</td>
+                <td>705 696</td>
+                <td>432 336</td>
+                <td>389 436</td>
+                <td>1 963 212</td>
+                <td>1 801 020</td>
+                <td>1 646 952</td>
+                <td>1 484 760</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха Ecotermal 37316</td>
+                <td>500</td>
+                <td>1 460 028</td>
+                <td>1 383 768</td>
+                <td>717 888</td>
+                <td>641 628</td>
+                <td>3 011 232</td>
+                <td>2 727 900</td>
+                <td>2 269 092</td>
+                <td>1 985 760</td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+    <br/>
+    <table class="table">
+        <thead>
+            <tr>
+                <th rowspan="2">Наименование</th>
+                <th rowspan="2">Ду</th>
+                <th colspan="4">Корпус стальной</th>
+                <th colspan="4">Корпус нержавеющий</th>
+            </tr>
+            <tr>
+                <th>Фланец</th>
+                <th>Под приварку</th>
+                <th>Фланец</th>
+                <th>Под приварку</th>
+                <th>Фланец</th>
+                <th>Под приварку</th>
+                <th>Фланец</th>
+                <th>Под приварку</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 27601</td>
+                <td>20</td>
+                <td>21 948</td>
+                <td>19 452</td>
+                <td>19 608</td>
+                <td>17 112</td>
+                <td>53 664</td>
+                <td>45 240</td>
+                <td>51 324</td>
+                <td>42 900</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 27602</td>
+                <td>25</td>
+                <td>22 548</td>
+                <td>19 632</td>
+                <td>20 208</td>
+                <td>17 292</td>
+                <td>55 956</td>
+                <td>45 900</td>
+                <td>53 616</td>
+                <td>43 560</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 27603</td>
+                <td>32</td>
+                <td>23 220</td>
+                <td>20 016</td>
+                <td>20 880</td>
+                <td>17 676</td>
+                <td>58 560</td>
+                <td>47 172</td>
+                <td>56 220</td>
+                <td>44 832</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 27604</td>
+                <td>40</td>
+                <td>28 488</td>
+                <td>24 816</td>
+                <td>24 072</td>
+                <td>20 400</td>
+                <td>70 200</td>
+                <td>56 964</td>
+                <td>65 784</td>
+                <td>52 548</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 27605</td>
+                <td>50</td>
+                <td>30 756</td>
+                <td>25 452</td>
+                <td>26 340</td>
+                <td>21 036</td>
+                <td>77 664</td>
+                <td>58 920</td>
+                <td>73 248</td>
+                <td>54 504</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 27606</td>
+                <td>65</td>
+                <td>32 736</td>
+                <td>26 340</td>
+                <td>28 320</td>
+                <td>21 924</td>
+                <td>84 564</td>
+                <td>61 884</td>
+                <td>80 148</td>
+                <td>57 468</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 27607</td>
+                <td>80</td>
+                <td>48 396</td>
+                <td>41 268</td>
+                <td>37 056</td>
+                <td>29 928</td>
+                <td>118 092</td>
+                <td>92 892</td>
+                <td>106 752</td>
+                <td>81 552</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 27608</td>
+                <td>100</td>
+                <td>51 480</td>
+                <td>42 492</td>
+                <td>40 140</td>
+                <td>31 152</td>
+                <td>128 664</td>
+                <td>96 924</td>
+                <td>117 324</td>
+                <td>85 584</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 27609</td>
+                <td>125</td>
+                <td>67 488</td>
+                <td>56 460</td>
+                <td>49 212</td>
+                <td>38 184</td>
+                <td>166 812</td>
+                <td>127 140</td>
+                <td>148 536</td>
+                <td>108 864</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 27610</td>
+                <td>150</td>
+                <td>92 508</td>
+                <td>80 292</td>
+                <td>61 632</td>
+                <td>49 416</td>
+                <td>225 912</td>
+                <td>181 716</td>
+                <td>195 036</td>
+                <td>150 840</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 27611</td>
+                <td>200</td>
+                <td>167 952</td>
+                <td>152 220</td>
+                <td>97 392</td>
+                <td>81 660</td>
+                <td>397 140</td>
+                <td>339 876</td>
+                <td>326 580</td>
+                <td>269 316</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 27612</td>
+                <td>250</td>
+                <td>269 352</td>
+                <td>249 036</td>
+                <td>133 272</td>
+                <td>112 956</td>
+                <td>601 692</td>
+                <td>525 912</td>
+                <td>465 612</td>
+                <td>389 832</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 27613</td>
+                <td>300</td>
+                <td>433 236</td>
+                <td>407 700</td>
+                <td>201 396</td>
+                <td>175 860</td>
+                <td>966 228</td>
+                <td>871 452</td>
+                <td>734 388</td>
+                <td>639 612</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 27614</td>
+                <td>350</td>
+                <td>624 924</td>
+                <td>592 908</td>
+                <td>265 824</td>
+                <td>233 808</td>
+                <td>1 375 164</td>
+                <td>1 254 336</td>
+                <td>1 016 064</td>
+                <td>895 236</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 27615</td>
+                <td>400</td>
+                <td>799 452</td>
+                <td>756 552</td>
+                <td>324 432</td>
+                <td>281 532</td>
+                <td>1 803 972</td>
+                <td>1 641 780</td>
+                <td>1 328 952</td>
+                <td>1 166 760</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 27616</td>
+                <td>500</td>
+                <td>1 483 920</td>
+                <td>1 373 100</td>
+                <td>494 820</td>
+                <td>418 596</td>
+                <td>2 416 440</td>
+                <td>2 133 192</td>
+                <td>1 427 340</td>
+                <td>1 144 092</td>
+            </tr>
+        </tbody>
+    </table>
+    <br/>
+    <br/>
+    <table class="table">
+        <thead>
+            <tr>
+                <th rowspan="2">Наименование</th>
+                <th rowspan="2">Ду</th>
+                <th colspan="4">Корпус стальной</th>
+                <th colspan="4">Корпус нержавеющий</th>
+            </tr>
+            <tr>
+                <th>Фланец</th>
+                <th>Сетка</th>
+                <th>Фланец</th>
+                <th>Сетка</th>
+                <th>Фланец</th>
+                <th>Сетка</th>
+                <th>Фланец</th>
+                <th>Сетка</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 37601</td>
+                <td>20</td>
+                <td>29 496</td>
+                <td>26 976</td>
+                <td>27 156</td>
+                <td>24 636</td>
+                <td>79 032</td>
+                <td>70 524</td>
+                <td>76 692</td>
+                <td>68 184</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 37602</td>
+                <td>25</td>
+                <td>30 096</td>
+                <td>27 132</td>
+                <td>27 756</td>
+                <td>24 792</td>
+                <td>81 324</td>
+                <td>71 100</td>
+                <td>78 984</td>
+                <td>68 760</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 37603</td>
+                <td>32</td>
+                <td>30 768</td>
+                <td>27 516</td>
+                <td>28 428</td>
+                <td>25 176</td>
+                <td>83 916</td>
+                <td>72 372</td>
+                <td>81 576</td>
+                <td>70 032</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 37604</td>
+                <td>40</td>
+                <td>38 484</td>
+                <td>34 812</td>
+                <td>34 068</td>
+                <td>30 396</td>
+                <td>101 580</td>
+                <td>88 344</td>
+                <td>97 164</td>
+                <td>83 928</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 37605</td>
+                <td>50</td>
+                <td>40 872</td>
+                <td>35 604</td>
+                <td>36 456</td>
+                <td>31 188</td>
+                <td>109 332</td>
+                <td>90 660</td>
+                <td>104 916</td>
+                <td>86 244</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 37606</td>
+                <td>65</td>
+                <td>42 900</td>
+                <td>36 504</td>
+                <td>38 484</td>
+                <td>32 088</td>
+                <td>116 340</td>
+                <td>93 648</td>
+                <td>111 924</td>
+                <td>89 232</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 37607</td>
+                <td>80</td>
+                <td>60 840</td>
+                <td>53 700</td>
+                <td>49 500</td>
+                <td>42 360</td>
+                <td>158 280</td>
+                <td>133 080</td>
+                <td>146 940</td>
+                <td>121 740</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 37608</td>
+                <td>100</td>
+                <td>63 876</td>
+                <td>54 876</td>
+                <td>52 536</td>
+                <td>43 536</td>
+                <td>168 804</td>
+                <td>137 064</td>
+                <td>157 464</td>
+                <td>125 724</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 37609</td>
+                <td>125</td>
+                <td>87 636</td>
+                <td>76 620</td>
+                <td>69 360</td>
+                <td>58 344</td>
+                <td>233 448</td>
+                <td>193 776</td>
+                <td>215 172</td>
+                <td>175 500</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 37610</td>
+                <td>150</td>
+                <td>117 768</td>
+                <td>105 588</td>
+                <td>86 892</td>
+                <td>74 712</td>
+                <td>315 144</td>
+                <td>271 020</td>
+                <td>284 268</td>
+                <td>240 144</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 37611</td>
+                <td>200</td>
+                <td>212 928</td>
+                <td>197 196</td>
+                <td>142 368</td>
+                <td>126 636</td>
+                <td>553 632</td>
+                <td>496 380</td>
+                <td>483 072</td>
+                <td>425 820</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 37612</td>
+                <td>250</td>
+                <td>346 584</td>
+                <td>326 268</td>
+                <td>210 504</td>
+                <td>190 188</td>
+                <td>874 704</td>
+                <td>798 936</td>
+                <td>738 624</td>
+                <td>662 856</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 37613</td>
+                <td>300</td>
+                <td>547 068</td>
+                <td>521 544</td>
+                <td>315 228</td>
+                <td>289 704</td>
+                <td>1 342 692</td>
+                <td>1 247 916</td>
+                <td>1 110 852</td>
+                <td>1 016 076</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 37614</td>
+                <td>350</td>
+                <td>745 992</td>
+                <td>713 988</td>
+                <td>386 892</td>
+                <td>354 888</td>
+                <td>1 774 464</td>
+                <td>1 653 636</td>
+                <td>1 415 364</td>
+                <td>1 294 536</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 37615</td>
+                <td>400</td>
+                <td>943 356</td>
+                <td>900 456</td>
+                <td>468 336</td>
+                <td>425 436</td>
+                <td>2 297 328</td>
+                <td>2 135 136</td>
+                <td>1 822 308</td>
+                <td>1 660 116</td>
+            </tr>
+            <tr>
+                <td>Сепаратор воздуха и шлама Ecotermal 37616</td>
+                <td>500</td>
+                <td>1 748 208</td>
+                <td>1 671 960</td>
+                <td>759 108</td>
+                <td>682 860</td>
+                <td>3 300 240</td>
+                <td>3 016 908</td>
+                <td>2 311 140</td>
+                <td>2 027 808</td>
+            </tr>
+        </tbody>
+    </table>
+  <br/>
+  <br/>
+    <table class="table">
+        <thead>
+            <tr>
+                <th rowspan="2">Наименование</th>
+                <th rowspan="2">Ду</th>
+                <th colspan="4">Корпус стальной</th>
+                <th colspan="4">Корпус нержавеющий</th>
+            </tr>
+            <tr>
+                <th>Фланец</th>
+                <th>Под приварку</th>
+                <th>Фланец</th>
+                <th>Под приварку</th>
+                <th>Фланец</th>
+                <th>Под приварку</th>
+                <th>Фланец</th>
+                <th>Под приварку</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Сепаратор шлама Ecotermal 27001</td>
+                <td>20</td>
+                <td>20 280</td>
+                <td>17 796</td>
+                <td>18 636</td>
+                <td>16 152</td>
+                <td>50 928</td>
+                <td>42 504</td>
+                <td>49 284</td>
+                <td>40 860</td>
+            </tr>
+            <tr>
+                <td>Сепаратор шлама Ecotermal 27002</td>
+                <td>25</td>
+                <td>20 892</td>
+                <td>17 976</td>
+                <td>19 248</td>
+                <td>16 332</td>
+                <td>53 220</td>
+                <td>43 152</td>
+                <td>51 576</td>
+                <td>41 508</td>
+            </tr>
+            <tr>
+                <td>Сепаратор шлама Ecotermal 27003</td>
+                <td>32</td>
+                <td>21 564</td>
+                <td>18 360</td>
+                <td>19 920</td>
+                <td>16 716</td>
+                <td>55 824</td>
+                <td>44 436</td>
+                <td>54 180</td>
+                <td>42 792</td>
+            </tr>
+            <tr>
+                <td>Сепаратор шлама Ecotermal 27004</td>
+                <td>40</td>
+                <td>25 380</td>
+                <td>21 708</td>
+                <td>22 416</td>
+                <td>18 744</td>
+                <td>65 256</td>
+                <td>52 032</td>
+                <td>62 292</td>
+                <td>49 068</td>
+            </tr>
+            <tr>
+                <td>Сепаратор шлама Ecotermal 27005</td>
+                <td>50</td>
+                <td>28 020</td>
+                <td>22 728</td>
+                <td>25 056</td>
+                <td>19 764</td>
+                <td>73 092</td>
+                <td>54 348</td>
+                <td>70 128</td>
+                <td>51 384</td>
+            </tr>
+            <tr>
+                <td>Сепаратор шлама Ecotermal 27006</td>
+                <td>65</td>
+                <td>30 720</td>
+                <td>24 324</td>
+                <td>27 564</td>
+                <td>21 168</td>
+                <td>80 928</td>
+                <td>58 236</td>
+                <td>77 772</td>
+                <td>55 080</td>
+            </tr>
+            <tr>
+                <td>Сепаратор шлама Ecotermal 27007</td>
+                <td>80</td>
+                <td>42 756</td>
+                <td>27 804</td>
+                <td>34 944</td>
+                <td>27 804</td>
+                <td>108 504</td>
+                <td>83 316</td>
+                <td>100 692</td>
+                <td>75 504</td>
+            </tr>
+            <tr>
+                <td>Сепаратор шлама Ecotermal 27008</td>
+                <td>100</td>
+                <td>45 816</td>
+                <td>36 828</td>
+                <td>38 004</td>
+                <td>29 016</td>
+                <td>119 064</td>
+                <td>87 324</td>
+                <td>111 252</td>
+                <td>79 512</td>
+            </tr>
+            <tr>
+                <td>Сепаратор шлама Ecotermal 27009</td>
+                <td>125</td>
+                <td>59 424</td>
+                <td>48 396</td>
+                <td>46 380</td>
+                <td>35 352</td>
+                <td>153 744</td>
+                <td>114 060</td>
+                <td>140 700</td>
+                <td>101 016</td>
+            </tr>
+            <tr>
+                <td>Сепаратор шлама Ecotermal 27010</td>
+                <td>150</td>
+                <td>80 016</td>
+                <td>67 800</td>
+                <td>57 960</td>
+                <td>45 744</td>
+                <td>204 504</td>
+                <td>160 296</td>
+                <td>182 448</td>
+                <td>138 240</td>
+            </tr>
+            <tr>
+                <td>Сепаратор шлама Ecotermal 27011</td>
+                <td>200</td>
+                <td>141 120</td>
+                <td>125 376</td>
+                <td>90 720</td>
+                <td>74 976</td>
+                <td>352 452</td>
+                <td>295 188</td>
+                <td>302 052</td>
+                <td>244 788</td>
+            </tr>
+            <tr>
+                <td>Сепаратор шлама Ecotermal 27012</td>
+                <td>250</td>
+                <td>216 876</td>
+                <td>196 560</td>
+                <td>121 740</td>
+                <td>101 424</td>
+                <td>516 360</td>
+                <td>440 592</td>
+                <td>421 224</td>
+                <td>345 456</td>
+            </tr>
+            <tr>
+                <td>Сепаратор шлама Ecotermal 27013</td>
+                <td>300</td>
+                <td>342 384</td>
+                <td>316 848</td>
+                <td>179 208</td>
+                <td>153 672</td>
+                <td>808 644</td>
+                <td>713 868</td>
+                <td>645 468</td>
+                <td>550 692</td>
+            </tr>
+            <tr>
+                <td>Сепаратор шлама Ecotermal 27014</td>
+                <td>350</td>
+                <td>472 836</td>
+                <td>440 820</td>
+                <td>230 280</td>
+                <td>198 264</td>
+                <td>1 114 080</td>
+                <td>993 252</td>
+                <td>871 524</td>
+                <td>750 696</td>
+            </tr>
+            <tr>
+                <td>Сепаратор шлама Ecotermal 27015</td>
+                <td>400</td>
+                <td>603 276</td>
+                <td>560 388</td>
+                <td>287 016</td>
+                <td>244 128</td>
+                <td>1 468 440</td>
+                <td>1 306 248</td>
+                <td>1 152 180</td>
+                <td>989 988</td>
+            </tr>
+            <tr>
+                <td>Сепаратор шлама Ecotermal 27016</td>
+                <td>500</td>
+                <td>1 199 280</td>
+                <td>1 123 056</td>
+                <td>457 140</td>
+                <td>380 916</td>
+                <td>2 130 972</td>
+                <td>1 847 724</td>
+                <td>1 388 832</td>
+                <td>1 105 584</td>
+            </tr>
+        </tbody>
+    </table>
+    
+   <br/>
+   <br/>
+   <table class="table">
+    <thead>
+        <tr>
+            <th rowspan="2">Наименование</th>
+            <th rowspan="2">Ду</th>
+            <th colspan="4">Корпус стальной</th>
+            <th colspan="4">Корпус нержавеющий</th>
+        </tr>
+        <tr>
+            <th>Pall кольца</th>
+            <th>Сетка</th>
+            <th>Pall кольца</th>
+            <th>Сетка</th>
+            <th>Pall кольца</th>
+            <th>Сетка</th>
+            <th>Pall кольца</th>
+            <th>Сетка</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Сепаратор шлама Ecotermal 37001</td>
+            <td>20</td>
+            <td>28 260</td>
+            <td>25 740</td>
+            <td>26 616</td>
+            <td>24 096</td>
+            <td>76 704</td>
+            <td>68 208</td>
+            <td>75 060</td>
+            <td>66 564</td>
+        </tr>
+        <tr>
+            <td>Сепаратор шлама Ecotermal 37002</td>
+            <td>25</td>
+            <td>28 860</td>
+            <td>25 896</td>
+            <td>27 216</td>
+            <td>24 252</td>
+            <td>78 996</td>
+            <td>68 772</td>
+            <td>77 352</td>
+            <td>67 128</td>
+        </tr>
+        <tr>
+            <td>Сепаратор шлама Ecotermal 37003</td>
+            <td>32</td>
+            <td>29 532</td>
+            <td>26 268</td>
+            <td>27 888</td>
+            <td>24 624</td>
+            <td>81 600</td>
+            <td>70 056</td>
+            <td>79 956</td>
+            <td>68 412</td>
+        </tr>
+        <tr>
+            <td>Сепаратор шлама Ecotermal 37004</td>
+            <td>40</td>
+            <td>36 180</td>
+            <td>32 496</td>
+            <td>33 216</td>
+            <td>29 532</td>
+            <td>97 428</td>
+            <td>84 204</td>
+            <td>94 464</td>
+            <td>81 240</td>
+        </tr>
+        <tr>
+            <td>Сепаратор шлама Ecotermal 37005</td>
+            <td>50</td>
+            <td>38 520</td>
+            <td>33 252</td>
+            <td>35 556</td>
+            <td>30 288</td>
+            <td>105 144</td>
+            <td>86 484</td>
+            <td>102 180</td>
+            <td>83 520</td>
+        </tr>
+        <tr>
+            <td>Сепаратор шлама Ecotermal 37006</td>
+            <td>65</td>
+            <td>40 836</td>
+            <td>34 440</td>
+            <td>37 680</td>
+            <td>31 284</td>
+            <td>112 632</td>
+            <td>89 952</td>
+            <td>109 476</td>
+            <td>86 796</td>
+        </tr>
+        <tr>
+            <td>Сепаратор шлама Ecotermal 37007</td>
+            <td>80</td>
+            <td>55 584</td>
+            <td>48 456</td>
+            <td>47 772</td>
+            <td>40 644</td>
+            <td>149 088</td>
+            <td>123 888</td>
+            <td>141 276</td>
+            <td>116 076</td>
+        </tr>
+        <tr>
+            <td>Сепаратор шлама Ecotermal 37008</td>
+            <td>100</td>
+            <td>58 668</td>
+            <td>49 680</td>
+            <td>50 856</td>
+            <td>41 868</td>
+            <td>159 660</td>
+            <td>127 920</td>
+            <td>151 848</td>
+            <td>120 108</td>
+        </tr>
+        <tr>
+            <td>Сепаратор шлама Ecotermal 37009</td>
+            <td>125</td>
+            <td>80 328</td>
+            <td>69 300</td>
+            <td>67 284</td>
+            <td>56 256</td>
+            <td>221 124</td>
+            <td>181 440</td>
+            <td>208 080</td>
+            <td>168 396</td>
+        </tr>
+        <tr>
+            <td>Сепаратор шлама Ecotermal 37010</td>
+            <td>150</td>
+            <td>105 708</td>
+            <td>93 516</td>
+            <td>83 652</td>
+            <td>71 460</td>
+            <td>294 156</td>
+            <td>250 044</td>
+            <td>272 100</td>
+            <td>227 988</td>
+        </tr>
+        <tr>
+            <td>Сепаратор шлама Ecotermal 37011</td>
+            <td>200</td>
+            <td>185 364</td>
+            <td>169 632</td>
+            <td>134 964</td>
+            <td>119 232</td>
+            <td>508 236</td>
+            <td>450 972</td>
+            <td>457 836</td>
+            <td>400 572</td>
+        </tr>
+        <tr>
+            <td>Сепаратор шлама Ecotermal 37012</td>
+            <td>250</td>
+            <td>294 924</td>
+            <td>274 608</td>
+            <td>199 788</td>
+            <td>179 472</td>
+            <td>790 200</td>
+            <td>714 420</td>
+            <td>695 064</td>
+            <td>619 284</td>
+        </tr>
+        <tr>
+            <td>Сепаратор шлама Ecotermal 37013</td>
+            <td>300</td>
+            <td>456 324</td>
+            <td>430 800</td>
+            <td>293 148</td>
+            <td>267 624</td>
+            <td>1 185 216</td>
+            <td>1 090 440</td>
+            <td>1 022 040</td>
+            <td>927 264</td>
+        </tr>
+        <tr>
+            <td>Сепаратор шлама Ecotermal 37014</td>
+            <td>350</td>
+            <td>595 308</td>
+            <td>563 304</td>
+            <td>352 752</td>
+            <td>320 748</td>
+            <td>1 514 784</td>
+            <td>1 393 956</td>
+            <td>1 272 228</td>
+            <td>1 151 400</td>
+        </tr>
+        <tr>
+            <td>Сепаратор шлама Ecotermal 37015</td>
+            <td>400</td>
+            <td>749 028</td>
+            <td>706 128</td>
+            <td>432 768</td>
+            <td>389 868</td>
+            <td>1 963 644</td>
+            <td>1 801 452</td>
+            <td>1 647 384</td>
+            <td>1 485 192</td>
+        </tr>
+        <tr>
+            <td>Сепаратор шлама Ecotermal 37016</td>
+            <td>500</td>
+            <td>1 460 868</td>
+            <td>1 384 608</td>
+            <td>718 728</td>
+            <td>642 468</td>
+            <td>3 012 072</td>
+            <td>2 728 740</td>
+            <td>2 269 932</td>
+            <td>1 986 600</td>
+        </tr>
+    </tbody>
+</table>
+ </div>
+ <script>
+    // Получаем все ячейки таблицы
+    const cells = document.querySelectorAll('.table td');
+
+    // Загружаем сохраненные состояния из localStorage
+    cells.forEach((cell, index) => {
+        const cellState = localStorage.getItem(`cell-${index}`);
+        if (cellState === 'true') {
+            cell.classList.add('gray'); // Восстанавливаем класс, если он сохранен
+        }
+
+        // Добавляем обработчик события клика для каждой ячейки
+        cell.addEventListener('click', function() {
+            this.classList.toggle('gray'); // Добавляем или убираем класс "gray"
+            
+            // Сохраняем состояние ячейки в localStorage
+            localStorage.setItem(`cell-${index}`, this.classList.contains('gray'));
+
+            // Копируем текст ячейки в буфер обмена
+            const textToCopy = this.innerText; // Получаем текст из ячейки
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                // Уведомление о том, что текст скопирован
+                console.log(`Скопировано: ${textToCopy}`); // Можно заменить на отображение уведомления на экране
+            }).catch(err => {
+                console.error('Ошибка при копировании: ', err);
+            });
+        });
+    });
+</script>
+</body>
+</html>
