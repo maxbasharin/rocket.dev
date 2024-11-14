@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>To-Do List</title>
+    <title>rocket.dev</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>To-Do List</h1>
-        <input type="text" id="taskInput" placeholder="Введите задачу...">
-        <button id="addTaskBtn">Добавить задачу</button>
-        <ul id="taskList"></ul>
+    <div>
+        <a class="logo" href="/">rocket.dev</a>
+        <div class="password-container" id="password-container" style="position: relative;">
+            <form>
+                <input type="text" maxlength="1" class="password-input" id="input1">
+                <input type="text" maxlength="1" class="password-input" id="input2">
+                <input type="text" maxlength="1" class="password-input" id="input3">
+                <input type="text" maxlength="1" class="password-input" id="input4">
+            </form>
+            <div class="error-message" id="error-message">Неправильный пароль.</div>
+           
+        </div>
+        <div id="click-area" style="position: absolute; top: 0; right: 0; width: 50px; height: 50px;"></div>
     </div>
-    <script src="script.js"></script>
+
+    <iframe id="content-frame" class="hidden" src="program/index.html"></iframe>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
