@@ -1,33 +1,19 @@
 {
     "categories": {
-      "design": [
+      "Основы JavaScript": [
         {
-          "question": "Основы JavaScript",
-          "answer": "123"
-        },
-        {
-          "question": "Какой цвет является основным в RGB?",
-          "answer": "Нет"
+          "question": "Что такое JavaScript",
+          "answer": "JavaScript — это универсальный язык программирования, который в первую очередь используется для создания интерактивных элементов на веб-страницах."
         }
       ],
-      "programming": [
+      "Дополнительные основы JavaScript": [
         {
-          "question": "Что такое JavaScript?",
+          "question": "Переменные и строгий режим",
           "answer": "Да"
         },
         {
-          "question": "Является ли Python компилируемым языком?",
-          "answer": "Нет"
-        }
-      ],
-      "personal": [
-        {
-          "question": "Ты любишь путешествовать?",
+          "question": "Как объявить переменную",
           "answer": "Да"
-        },
-        {
-          "question": "Ты предпочитаешь кофе чаю?",
-          "answer": "Нет"
         }
       ]
     }
