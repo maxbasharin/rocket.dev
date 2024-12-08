@@ -1,13 +1,289 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Полный курс по JavaScript + React</title>
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h2>
-        <a href="../course/1/index.html">Что такое JS и как его подключить к сранице</a>
-    </h2>
+	<div class="container container-content">
+		<div class="section__container">
+			<h1 class="content__title">Полный курс по JavaScript + React</h1>
+			<a class="link" href="https://campfire-school.com/courses/javascript-react-tr/episode/397" target="_blank">ссылка</a>
+			<div class="section__row">
+
+				<div class="content__wrapper js-accordion">
+
+					<section class="content__item js-accordion-item" id="js-react-course-1">
+						<div class="content__title-mobile js-accordion-toggle">
+							<h4>Что такое JS и как его подключить к странице</h4>
+							<i class="content__icon js-accordion-icon">
+								<svg width="26" height="15" viewBox="0 0 26 15" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.5747 13.6586L12.8309 2.40242L24.0226 13.5942" stroke-width="3" />
+								</svg>
+							</i>
+						</div>
+						<div class="content__item-wrapper">
+							<h2 class="element-none">Что такое JS и как его подключить к странице</h2>
+							<p>JavaScript — это универсальный язык программирования, который в первую очередь
+								используется для создания интерактивных элементов на веб-страницах</p>
+							<div class="content__table">
+								<table class="table">
+									<thead>
+										<tr>
+											<th>Способ подключения</th>
+											<th>Описание</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												Внутренний скрипт
+											</td>
+											<td>JavaScript код помещается внутри тега
+												<code>&lt;script&gt;
+													alert(1);
+												  &lt;/script&gt;</code>
+													 в HTML-файле.
+											</td>
+										</tr>
+											<tr>
+												<td>
+													Внутренний скрипт
+												</td>
+												<td>
+													<code>
+														&lt;button onclick=""&gt;меню&lt;/button&gt;
+													</code>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													Внешний скрипт
+												</td>
+												<td> Внешний файлик с расширением .js 
+													<code>&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+												</td>
+											</tr>
+										
+									</tbody>
+								</table>
+
+							</div>
+						</div>
+					</section>
+
+					<section class="content__item" id="js-react-course-2">
+						<div class="content__title-mobile js-accordion-toggle">
+							<h4>Переменные и строгий режим</h4>
+							<i class="content__icon js-accordion-icon">
+								<svg width="26" height="15" viewBox="0 0 26 15" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.5747 13.6586L12.8309 2.40242L24.0226 13.5942" stroke-width="3" />
+								</svg></i>
+						</div>
+						<div class="content__item-wrapper">
+
+							<h2 class="element-none">
+								Переменные и строгий режим
+							</h2>
+							<p>Переменные — это хранилища информации
+							</p>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Виды переменных</th>
+										<th>Описание</th>
+										<th>Пример</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											let
+										</td>
+										<td>
+											Значение переменной может быть перезаписано
+										</td>
+										<td>
+											<code>let number = 5</code>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											const
+										</td>
+										<td>
+											Значение переменной не может быть перезаписано (ну почти :D )
+										</td>
+										<td>
+											<code>const leftBorderWidth = 5</code>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											var
+										</td>
+										<td>
+											Проблема var в том что она сущестует еще то того как она была объявлена в коде и видна она везде
+										</td>
+										<td>
+											<code>var Name = 'Alex'</code>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Глобальные
+										</td>
+										<td>
+											Переменные, объявленные вне всех функций и блоков, имеют глобальную область видимости и доступны из любой части кода.
+										</td>
+										<td>
+											<code>let modalBlock = modal;</code>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Локальные
+										</td>
+										<td>
+											Переменные, объявленные внутри функции или блока, имеют локальную область видимости и доступны только внутри этой функции или блока.
+										</td>
+										<td><code>function test() { let test = 'test'; }</code></td>
+									</tr>
+									<tr>
+										<td>
+											Объектные
+										</td>
+										<td>
+											Переменные могут хранить объекты, массивы и функции, что позволяет создавать сложные структуры данных.
+										</td>
+										<td><code>let obj = { name: 'Modal', classToggle: active };</code></td>
+									</tr>
+									</tbody>
+							</table>
+						
+									<br/>
+									<ul>
+										<li>Имя переменной должно начинаться с буквы (a-z, A-Z), знака доллара ($) или символа подчеркивания (_).</li>
+										<li>Используйте стиль camelCase для многосоставных имен</li>
+										<li>Имена переменных чувствительны к регистру</li>
+										<li>Прямых констант в js не бывает</li>
+										<li>Нельзя начинать имя переменной с цифры.</li>
+										<li>Нельзя использовать зарезервированные слова JavaScript </li>
+									</ul>
+									<p>
+										"use strict"; — это директива в JavaScript, которая активирует строгий режим, это значит что теперь недопускается работы некоторых нечтоностей котоые были в старых стандартах javascript
+									</p>
+
+						</div>
+					</section>
+					<section class="content__item" id="js-react-course-3">
+						<div class="content__title-mobile js-accordion-toggle">
+							<h4>Правила и типы названия переменных</h4>
+							<i class="content__icon js-accordion-icon">
+								<svg width="26" height="15" viewBox="0 0 26 15" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.5747 13.6586L12.8309 2.40242L24.0226 13.5942" stroke-width="3" />
+								</svg></i>
+						</div>
+						<div class="content__item-wrapper">
+
+							<h2 class="element-none">
+								Правила и типы названия переменных
+							</h2>
+							<p>
+								Название переменной должно четко обозначать что это за данные и что от них ждут
+							</p>
+							<p>
+								Значть что это за действие и какой результат будет получен
+							</p>
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Виды переменных</th>
+										<th>Описание</th>
+										<th>Пример</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											let
+										</td>
+										<td>
+
+										</td>
+										<td>
+											let number = 5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											const
+										</td>
+										<td>
+
+										</td>
+										<td>
+											const leftBorderWidth = 5
+										</td>
+									</tr>
+									<tr>
+										<td>
+											var
+										</td>
+										<td>
+											Проблема var в том что она сущестует еще то того как она была объявлена в коде и видна она везде
+										</td>
+										<td>
+											var Name = 'Alex'
+										</td>
+									</tr>
+									</tbody>
+									</table>
+									<br/>
+									<ul>
+										<li>Имя переменной должно начинаться с буквы (a-z, A-Z), знака доллара ($) или символа подчеркивания (_).</li>
+										<li>Используйте стиль camelCase для многосоставных имен</li>
+										<li>Имена переменных чувствительны к регистру</li>
+										<li>Прямых констант в js не бывает</li>
+										<li>Нельзя начинать имя переменной с цифры.</li>
+										<li>Нельзя использовать зарезервированные слова JavaScript </li>
+									</ul>
+									<p>
+										"use strict"; — это директива в JavaScript, которая активирует строгий режим, это значит что теперь недопускается работы некоторых нечтоностей котоые были в старых стандартах javascript
+									</p>
+
+						</div>
+					</section>
+				</div>
+				<div class="sidebar">
+					<ul class="sidebar__nav refers">
+						<li>
+							<a href="#js-react-course-1" class="active">Полный курс по JavaScript + React</a>
+						</li>
+						<li>
+							<a href="#js-react-course-2">Переменные и строгий режим</a>
+						</li>
+						<li>
+							<a href="#js-react-course-3">Правила и типы названия переменных</a>
+						</li>
+					</ul>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+	<script src="assets/js/main.js"></script>
 </body>
+
 </html>
