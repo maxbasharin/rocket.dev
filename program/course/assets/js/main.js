@@ -1,3 +1,4 @@
+console.log('%c «Бу! Испугался? Не бойся, я друг» ', 'color: red; background: black; font-size: 20px');
 // Переменные и строгий режим
 
 // "use strict";
@@ -24,9 +25,28 @@
 // console.log(result);
 
 // Правила и типы названия переменных
-const a = 5000;
-const b = 4000;
+const vehicleBodyWidth = 5000;
+const vehicleBodyLength = 4000;
 
-console.log("Ширина кузова автомобиля: " + a + ', длина: ' + b);
+console.log("Ширина кузова автомобиля: " + vehicleBodyWidth + ', длина: ' + vehicleBodyLength);
 
-console.log('%c test ', 'color: red; background: black; font-size: 20px');
+// ['vv', 'dd', 'tt'].map(item => )
+
+// Request
+// data
+// response
+
+// snake_case
+// UPPER_SNAKE_CASE
+// Kebab-case
+// PascalCase
+
+const COLOR_RED = "#FFF";
+
+const _apiBase = 'https://rbru.ru/';
+const _apiKey = 'sdaj28hfhfh28hwfsjfsdjk';
+
+// Ваше решение
+let userName = "John";
+let userNumber = 25;
+userNumber = 24;

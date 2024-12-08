@@ -13,7 +13,8 @@
 	<div class="container container-content">
 		<div class="section__container">
 			<h1 class="content__title">Полный курс по JavaScript + React</h1>
-			<a class="link" href="https://campfire-school.com/courses/javascript-react-tr/episode/397" target="_blank">ссылка</a>
+			<a class="link" href="https://campfire-school.com/courses/javascript-react-tr/episode/397"
+				target="_blank">ссылка</a>
 			<div class="section__row">
 
 				<div class="content__wrapper js-accordion">
@@ -49,28 +50,28 @@
 												<code>&lt;script&gt;
 													alert(1);
 												  &lt;/script&gt;</code>
-													 в HTML-файле.
+												в HTML-файле.
 											</td>
 										</tr>
-											<tr>
-												<td>
-													Внутренний скрипт
-												</td>
-												<td>
-													<code>
+										<tr>
+											<td>
+												Внутренний скрипт
+											</td>
+											<td>
+												<code>
 														&lt;button onclick=""&gt;меню&lt;/button&gt;
 													</code>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													Внешний скрипт
-												</td>
-												<td> Внешний файлик с расширением .js 
-													<code>&lt;script src="script.js"&gt;&lt;/script&gt;</code>
-												</td>
-											</tr>
-										
+											</td>
+										</tr>
+										<tr>
+											<td>
+												Внешний скрипт
+											</td>
+											<td> Внешний файлик с расширением .js
+												<code>&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+											</td>
+										</tr>
+
 									</tbody>
 								</table>
 
@@ -130,7 +131,8 @@
 											var
 										</td>
 										<td>
-											Проблема var в том что она сущестует еще то того как она была объявлена в коде и видна она везде
+											Проблема var в том что она сущестует еще то того как она была объявлена в
+											коде и видна она везде
 										</td>
 										<td>
 											<code>var Name = 'Alex'</code>
@@ -141,7 +143,8 @@
 											Глобальные
 										</td>
 										<td>
-											Переменные, объявленные вне всех функций и блоков, имеют глобальную область видимости и доступны из любой части кода.
+											Переменные, объявленные вне всех функций и блоков, имеют глобальную область
+											видимости и доступны из любой части кода.
 										</td>
 										<td>
 											<code>let modalBlock = modal;</code>
@@ -152,7 +155,8 @@
 											Локальные
 										</td>
 										<td>
-											Переменные, объявленные внутри функции или блока, имеют локальную область видимости и доступны только внутри этой функции или блока.
+											Переменные, объявленные внутри функции или блока, имеют локальную область
+											видимости и доступны только внутри этой функции или блока.
 										</td>
 										<td><code>function test() { let test = 'test'; }</code></td>
 									</tr>
@@ -161,25 +165,29 @@
 											Объектные
 										</td>
 										<td>
-											Переменные могут хранить объекты, массивы и функции, что позволяет создавать сложные структуры данных.
+											Переменные могут хранить объекты, массивы и функции, что позволяет создавать
+											сложные структуры данных.
 										</td>
 										<td><code>let obj = { name: 'Modal', classToggle: active };</code></td>
 									</tr>
-									</tbody>
+								</tbody>
 							</table>
-						
-									<br/>
-									<ul>
-										<li>Имя переменной должно начинаться с буквы (a-z, A-Z), знака доллара ($) или символа подчеркивания (_).</li>
-										<li>Используйте стиль camelCase для многосоставных имен</li>
-										<li>Имена переменных чувствительны к регистру</li>
-										<li>Прямых констант в js не бывает</li>
-										<li>Нельзя начинать имя переменной с цифры.</li>
-										<li>Нельзя использовать зарезервированные слова JavaScript </li>
-									</ul>
-									<p>
-										"use strict"; — это директива в JavaScript, которая активирует строгий режим, это значит что теперь недопускается работы некоторых нечтоностей котоые были в старых стандартах javascript
-									</p>
+
+							<br />
+							<ul>
+								<li>Имя переменной должно начинаться с буквы (a-z, A-Z), знака доллара ($) или символа
+									подчеркивания (_).</li>
+								<li>Используйте стиль camelCase для многосоставных имен</li>
+								<li>Имена переменных чувствительны к регистру</li>
+								<li>Прямых констант в js не бывает</li>
+								<li>Нельзя начинать имя переменной с цифры.</li>
+								<li>Нельзя использовать зарезервированные слова JavaScript </li>
+							</ul>
+							<p>
+								"use strict"; — это директива в JavaScript, которая активирует строгий режим, это значит
+								что теперь недопускается работы некоторых нечтоностей котоые были в старых стандартах
+								javascript
+							</p>
 
 						</div>
 					</section>
@@ -201,64 +209,87 @@
 								Название переменной должно четко обозначать что это за данные и что от них ждут
 							</p>
 							<p>
-								Значть что это за действие и какой результат будет получен
+								переменне должны значить что это за действие и какой результат будет получен
 							</p>
-							<table class="table">
-								<thead>
-									<tr>
-										<th>Виды переменных</th>
-										<th>Описание</th>
-										<th>Пример</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>
-											let
-										</td>
-										<td>
 
-										</td>
-										<td>
-											let number = 5
-										</td>
-									</tr>
-									<tr>
-										<td>
-											const
-										</td>
-										<td>
+							<ul>
+								<li><b>snake_case:</b> все буквы строчные, слова разделены подчеркиванием.</li>
+								<li><b>UPPER_SNAKE_CASE:</b> все буквы заглавные, слова разделены подчеркиванием.</li>
+								<li><b>Kebab-case:</b> все буквы строчные, слова разделены дефисом.</li>
+								<li><b>PascalCase:</b> каждое слово начинается с заглавной буквы, без разделителей.</li>
+							</ul>
 
-										</td>
-										<td>
-											const leftBorderWidth = 5
-										</td>
-									</tr>
-									<tr>
-										<td>
-											var
-										</td>
-										<td>
-											Проблема var в том что она сущестует еще то того как она была объявлена в коде и видна она везде
-										</td>
-										<td>
-											var Name = 'Alex'
-										</td>
-									</tr>
-									</tbody>
-									</table>
-									<br/>
-									<ul>
-										<li>Имя переменной должно начинаться с буквы (a-z, A-Z), знака доллара ($) или символа подчеркивания (_).</li>
-										<li>Используйте стиль camelCase для многосоставных имен</li>
-										<li>Имена переменных чувствительны к регистру</li>
-										<li>Прямых констант в js не бывает</li>
-										<li>Нельзя начинать имя переменной с цифры.</li>
-										<li>Нельзя использовать зарезервированные слова JavaScript </li>
-									</ul>
-									<p>
-										"use strict"; — это директива в JavaScript, которая активирует строгий режим, это значит что теперь недопускается работы некоторых нечтоностей котоые были в старых стандартах javascript
-									</p>
+						</div>
+					</section>
+					<section class="content__item" id="js-react-course-4">
+						<div class="content__title-mobile js-accordion-toggle">
+							<h4>Упражнение по написанию кода 1: Задание на создание правильных переменных</h4>
+							<i class="content__icon js-accordion-icon">
+								<svg width="26" height="15" viewBox="0 0 26 15" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.5747 13.6586L12.8309 2.40242L24.0226 13.5942" stroke-width="3" />
+								</svg></i>
+						</div>
+						<div class="content__item-wrapper">
+
+							<h2 class="element-none">
+								Упражнение по написанию кода 1: Задание на создание правильных переменных
+							</h2>
+							<p>
+								// Создайте переменную, которая будет отображать имя пользователя. (Пользователь - user,
+								имя - name). В неё поместите значение "John"
+								<br/>
+								// На следующей строке создайте переменную, отображающую номер пользователя (номер -
+								number). В неё поместите значение 25.
+								<br/>
+								// Измените значение второй переменной с 25 на 24 на следующей строке.
+								<br/>
+								// Ваше решение
+								<br/>
+								<a class="link" href="https://codepen.io/ihinstone/pen/QWopyyR" target="_blank">ссылка</a>
+								<ul>
+									<li> let userName = "John";</li>
+									<li> let userNumber = 25;</li>
+									<li> userNumber = 24;</li>
+								</ul>
+							</p>
+							
+
+						</div>
+					</section>
+					<section class="content__item" id="js-react-course-5">
+						<div class="content__title-mobile js-accordion-toggle">
+							<h4>Классификация типов данных в JavaScript</h4>
+							<i class="content__icon js-accordion-icon">
+								<svg width="26" height="15" viewBox="0 0 26 15" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.5747 13.6586L12.8309 2.40242L24.0226 13.5942" stroke-width="3" />
+								</svg></i>
+						</div>
+						<div class="content__item-wrapper">
+
+							<h2 class="element-none">
+								Классификация типов данных в JavaScript
+							</h2>
+							<p>
+								// Создайте переменную, которая будет отображать имя пользователя. (Пользователь - user,
+								имя - name). В неё поместите значение "John"
+								<br/>
+								// На следующей строке создайте переменную, отображающую номер пользователя (номер -
+								number). В неё поместите значение 25.
+								<br/>
+								// Измените значение второй переменной с 25 на 24 на следующей строке.
+								<br/>
+								// Ваше решение
+								<br/>
+								<a class="link" href="https://codepen.io/ihinstone/pen/QWopyyR" target="_blank">ссылка</a>
+								<ul>
+									<li> let userName = "John";</li>
+									<li> let userNumber = 25;</li>
+									<li> userNumber = 24;</li>
+								</ul>
+							</p>
+							
 
 						</div>
 					</section>
@@ -274,6 +305,13 @@
 						<li>
 							<a href="#js-react-course-3">Правила и типы названия переменных</a>
 						</li>
+						<li>
+							<a href="#js-react-course-4">Упражнение по написанию кода 1: Задание на создание правильных
+								переменных</a>
+						</li>
+						<li>
+							<a href="#js-react-course-5">Классификация типов данных в JavaScript</a>
+						</li>
 					</ul>
 				</div>
 
@@ -281,7 +319,8 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js"integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 	<script src="script.js"></script>
 	<script src="assets/js/main.js"></script>
 </body>
