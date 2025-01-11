@@ -46,10 +46,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         closeModal.addEventListener('click', function() {
+            modal.querySelector('.modal-content').classList.remove('show'); // Убираем класс показа
             modal.querySelector('.modal-content').classList.add('hide'); // Применяем класс для скрытия
             setTimeout(() => {
                 modal.classList.remove('show'); // Убираем модалку из отображения
-                modal.querySelector('.modal-content').classList.remove('show', 'hide'); // Убираем классы анимации
+                modal.querySelector('.modal-content').classList.remove('hide'); // Убираем класс скрытия
                 document.body.classList.remove('no-scroll'); // Восстанавливаем прокрутку страницы
             }, 300); // Устанавливаем таймаут, чтобы дождаться окончания анимации
             history.replaceState(null, '', '/index.html'); // Очищаем URL, возвращая к главной странице
